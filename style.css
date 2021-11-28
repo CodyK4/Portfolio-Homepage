@@ -72,7 +72,7 @@
     #SectionA {
         display: flex;
         flex-direction: column;
-        background-image: url(homepagebackgroundv3.jpg);
+        background-image: url(assets/homepagebackgroundv3.jpg);
         background-size: contain;
         background-repeat: repeat-y;
         transition: all .5s;
@@ -91,14 +91,14 @@
     }
     
     #SectionB {
-        background-image: url(gipfelncover1.png);
+        background-image: url(assets/gipfelncover1.png);
         background-repeat: no-repeat; 
         background-size: cover;
         background-position: center;
     }
     
     #SectionC {
-        background-image: url(pythonbackgroundv3.jpg);
+        background-image: url(assets/pythonbackgroundv3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -109,7 +109,7 @@
     #FooterBridge {
         position: absolute; 
         right: 1vw;
-        background-image: url(FooterBridge.png);
+        background-image: url(assets/FooterBridge.png);
         background-size: cover;
         background-repeat: no-repeat;
         width: 19vw;
@@ -247,7 +247,7 @@
     #SectionA {
         display: flex;
         flex-direction: column;
-        background-image: url(homepagebackgroundv3.jpg);
+        background-image: url(assets/homepagebackgroundv3.jpg);
         background-size: cover;
         transition: all .5s;
     }
@@ -265,13 +265,13 @@
     }
     
     #SectionB {
-        background-image: url(gipfelncover1.png);
+        background-image: url(assets/gipfelncover1.png);
         background-repeat: no-repeat; 
         background-size: cover;
     }
     
     #SectionC {
-        background-image: url(pythonbackgroundv3.jpg);
+        background-image: url(assets/pythonbackgroundv3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -347,7 +347,7 @@
             position: absolute; 
             right: 1vw;
             margin-bottom: 32vh;
-            background-image: url(FooterBridge.png);
+            background-image: url(assets/FooterBridge.png);
             background-size: cover;
             background-repeat: no-repeat;
             width: 15vw;
@@ -587,7 +587,7 @@ body {
   }
 
   #Gipfeln_ModalImage1 {
-    background-image: url(gipfelnsc2.PNG);
+    background-image: url(assets/gipfelnsc2.PNG);
     background-size: cover;
     position: absolute;
     top: 6vh;
@@ -606,7 +606,7 @@ body {
   }
 
   #Gipfeln_ModalImage2 {
-    background-image: url(gipfelnsc1.PNG);
+    background-image: url(assets/gipfelnsc1.PNG);
     background-size: cover;
     position: absolute; 
     top: 36vh;
@@ -743,7 +743,7 @@ body {
   }
 
   #Casino_ModalImage1 {
-    background-image: url(gipfelnsc2.PNG);
+    background-image: url(assets/gipfelnsc2.PNG);
     background-size: cover;
     position: absolute;
     top: 6vh;
@@ -762,7 +762,7 @@ body {
   }
 
   #Casino_ModalImage2 {
-    background-image: url(gipfelnsc1.PNG);
+    background-image: url(assets/gipfelnsc1.PNG);
     background-size: cover;
     position: absolute; 
     top: 36vh;
@@ -837,7 +837,7 @@ body {
 }
 
 #Casino_ModalImage1 {
-  background-image: url(pythonlogo.png);
+  background-image: url(assets/pythonlogo.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -855,7 +855,7 @@ body {
 }
 
 #Casino_ModalImage2 {
-  background-image: url(pythoncasinoexample.PNG); /*rplc*/
+  background-image: url(assets/pythoncasinoexample.PNG); /*rplc*/
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -940,7 +940,7 @@ body {
 
   #Contact_Modal-content {
     box-shadow: 1.25vw 1.25vh lightgreen;
-    background-image: url(v3contactback.png);
+    background-image: url(assets/v3contactback.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: default;
