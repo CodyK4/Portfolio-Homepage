@@ -104,6 +104,13 @@
         background-position: center;
     }
 
+    #SectionD {
+        background-image: url(assets/SCProject.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     /*Start of Mobile Footer*/
 
     #FooterBridge {
@@ -115,6 +122,7 @@
         width: 19vw;
         height: 20vh;
         margin-bottom: 28vh;
+        z-index: 1;
     }
 
     #SectionFooter {

@@ -2,7 +2,7 @@ console.log("JavaScript APP.JS loaded successfully");
 
 /*
 var modalA = document.getElementById("Gipfeln_Modal");
-var modalB = document.getElementById("Casino_Modal");     //Look into merging, but not essential
+var modalB = document.getElementById("Casino_Modal");     //Old
 var modalC = document.getElementById("Contact_Modal");
 var modalD = document.getElementById("SC_Modal");
 */
@@ -11,7 +11,7 @@ var modal_Dir = document.getElementsByClassName("modal");
 
 /*
 var btn = document.getElementById("Gipfeln_Button");
-var btnb = document.getElementById("Casino_Button");      //Look into merging, but not essential
+var btnb = document.getElementById("Casino_Button");      //Old 
 var btnc = document.getElementById("Contact_Button");
 */
 
@@ -24,22 +24,20 @@ var plaque = document.getElementById("ftright_plaque");
 var footer = document.getElementById("SectionFooter");
 
 function Modal_Runner() {
-  for(i in btn_Master) {
-      btn_Contact.onclick = function() {
-        modal_Dir[0].style.display = "block"
-      }
+  btn_Contact.onclick = function() {
+      modal_Dir[0].style.display = "block";
+  }
 
-      btn_Master[0].onclick = function() {
-        modal_Dir[1].style.display = "block";
-      }
+  btn_Master[0].onclick = function() {
+      modal_Dir[1].style.display = "block";
+  }
 
-      btn_Master[1].onclick = function() {
-        modal_Dir[2].style.display = "block"
-      }
+  btn_Master[1].onclick = function() {
+      modal_Dir[2].style.display = "block";
+  }
 
-      btn_Master[2].onclick = function() {
-        modal_Dir[3].style.display = "block"
-      }
+  btn_Master[2].onclick = function() {
+    modal_Dir[3].style.display = "block";
   }
 
   for(i in close) {
@@ -64,6 +62,16 @@ ftright_plaque.onclick = function() {
    SectionFooter.style.cssText = "background-color: black; transition: all 1s; color: white;";
    };
 
+
+  function snapScrollBtn_Runner() {
+      window.addEventListener("scroll", snapScrollBtn);
+      sBtn = document.getElementsByClassName("snap-scroll-buttons");
+
+      sBtn.onclick = function snapScrollBtn() {
+
+
+      }
+  }
 
 Modal_Runner()
 
