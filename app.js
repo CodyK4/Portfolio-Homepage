@@ -63,17 +63,28 @@ ftright_plaque.onclick = function() {
    };
 
 
-  function snapScrollBtn_Runner() {
-      window.addEventListener("scroll", snapScrollBtn);
-      sBtn = document.getElementsByClassName("snap-scroll-buttons");
+function snapScrollBtn_Runner() {
+    sBtn = document.getElementsByClassName("snap-scroll-buttons");
 
-      sBtn.onclick = function snapScrollBtn() {
+    sBtn[0].onclick = function snapScrollBtnuppr() {
+      //window.scrollBy(0, -window.innerHeight);
+      window.scrollBy({
+        top: -100,
+        behavior: 'smooth'
+      });
 
-
-      }
-  }
+    }
+    sBtn[1].onclick = function snapScrolldwn() {
+      //window.scrollBy(0, window.innerHeight);
+      window.scrollBy({
+        top: 100,
+        behavior: 'smooth'
+      });
+    }
+}
 
 Modal_Runner()
+snapScrollBtn_Runner()
 
 /* MODAL_DIR notes
 0 - Contact
