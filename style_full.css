@@ -79,6 +79,12 @@
         background-repeat: no-repeat;
     }
 
+    #SectionE_Video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
     #snap-scroll-button-container {
         display: flex;
         flex-direction: column;
