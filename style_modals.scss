@@ -1,0 +1,515 @@
+   
+
+  @mixin M{
+    @media (max-width: 600px) {
+        @content
+    }
+};
+  
+  /*Gipfeln Modal Start*/
+  /*    obselete
+  #Gipfeln_Button {
+    position: absolute; 
+    margin-top: 52vh;
+    background: #990000;
+    color: white;
+    border: none;
+    border-color: black;
+    border-style: double;
+    border-radius: 17vw;
+    border-width: 0.4vw;
+    cursor: pointer;
+    transition: all .5s;
+   }
+
+    #Gipfeln_Button:hover {
+     transition: all .5s;
+     box-shadow: 0.45vw 0.35vw 0.75vw black;
+     transform: scale(1.1);
+   } */
+
+   .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(100,100,100,0.92);
+    animation: CZoomIn 1s ease;
+    box-shadow: 3vw 3vh cyan;
+    transition: all .5s;
+
+    @include M {
+        top: 10vh;
+        width: 100vw;
+        height: 60vh;
+    }
+  }
+
+  .modal-content {
+    position: fixed;
+    left: 5vw;
+    top: 4.8vh;
+    justify-content: center;
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    transition: all .5s;
+    animation: CZoomIn 1s ease;
+    box-shadow: 1.25vw 1.25vh blue;
+
+    @include M {
+        top: 15vh;
+        width: 90vw;
+        height: 50vh;
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 1vw;
+    top: -1vh;
+    color: #aaaaaa;
+    float: right;
+    font-size: 2vw;
+    font-weight: bold;
+    transition: all .5s;
+
+    @include M{
+      top: 1vh;
+      right: 4vw;
+      transform: scale(5);
+    }
+  }
+  
+  .close:hover {
+    color: white;
+    text-shadow: 0.1vw 0.1vh red;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .5s;
+    animation: bounce 3s infinite;
+  }
+
+  .ModalImage_top {
+    background-size: cover;
+    position: absolute;
+    top: 6vh;
+    left: 2vw;
+    height: 28vh;
+    width: 29vw;
+    border-style: ridge;
+    border-width: 0.2vw;
+    border-color: gray;
+    transition: all .5s;
+
+    @include M{
+        width: 50vw;
+        height: 10vh;
+    }
+  }
+
+  .ModalImage_top:hover {
+    transition: all .5s;
+    transform: scale(0.99);
+    }
+
+  .ModalImage_bottom {
+    background-size: cover;
+    position: absolute; 
+    top: 36vh;
+    left: 2vw;
+    height: 28vh;
+    width: 29vw;
+    border-style: ridge;
+    border-width: 0.2vw;
+    border-color: gray;
+    transition: all .5s;
+
+    @include M{
+        width: 50vw;
+        height: 10vh;
+        top: 20vh;
+    }
+  }
+
+  .ModalImage_bottom:hover {
+    transition: all .5s;
+    transform: scale(0.99);
+    }
+
+  .ModalTitle {
+        position: absolute; 
+        color: white;
+        font-size: 4vw;
+        top: -1.85vw;
+        left: 45vw;
+
+        @include M{
+          top: -1.85vw;
+          left: 0;
+        }
+   }
+
+   .ModalText {
+    position: absolute;
+    background-color: transparent; 
+    color: white;
+    width: 50vw;
+    height: 70vh;
+    bottom: 3vh;
+    left: 35vw;
+
+    @include M{
+      width: 55vw;
+      height: 14vh;
+    }
+   }
+   
+  //all
+
+  #Gipfeln_ModalTitle {
+      font-size: 3vw;
+      left: 40vw;
+
+      @include M{
+        top: 1vh;
+        left: 6vw;
+      }
+  }
+
+  #Gipfeln_ModalImage1 {
+    background-image: url(assets/gipfelnsc2.PNG);
+  }
+
+  #Gipfeln_ModalImage2 {
+    background-image: url(assets/gipfelnsc1.PNG);
+}
+
+  #Gipfeln_Live_Project_Link {
+      position: absolute; 
+      bottom: 8vh;
+      left: 2vw;
+      width: 13.5vw;
+      height: 8vh;
+      font-size: 2vw;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      cursor: pointer;
+      transition: all .5s;
+      box-shadow: 0.2vw 0.15vw red;
+  }
+
+  #Gipfeln_Live_Project_Link:hover {
+    box-shadow: 0.4vw 0.3vw black; 
+    transition: all .5s;
+    transform: scale(0.95);
+}
+
+  #Gipfeln_Github_Project_Link {
+    position: absolute; 
+    bottom: 8vh;
+    left: 16vw;
+    width: 13.5vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer; 
+    box-shadow: 0.2vw 0.15vw green;
+    transition: all .5s;
+}
+
+ #Gipfeln_Github_Project_Link:hover {
+     box-shadow: 0.4vw 0.3vw black; 
+     transition: all .5s;
+     transform: scale(0.95);
+ }
+
+  /*Gipfeln Modal End*/
+
+  /*Casino Modal Start*/
+
+  #Casino_modal-content {
+      box-shadow: 1.25vw 1.25vh yellow;
+  }
+  /*    obselete
+  #Casino_Button {
+    position: absolute; 
+    margin-top: 52vh;
+    background: #990000;
+    color: white;
+    border: none;
+    border-color: black;
+    border-style: double;
+    border-radius: 17vw;
+    border-width: 0.4vw;
+    cursor: pointer;
+    transition: all .5s;
+   }
+
+   #Casino_Button:hover {
+    transition: all .5s;
+    box-shadow: 0.45vw 0.35vw 0.75vw black;
+    transform: scale(1.1);
+  } */
+
+  #Casino_ModalImage1 {
+    background-image: url(assets/gipfelnsc2.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+
+  #Casino_ModalImage2 {
+    background-image: url(assets/gipfelnsc1.PNG);
+}
+
+  #Casino_Live_Project_Link {
+      position: absolute; 
+      bottom: 8vh;
+      left: 2vw;
+      width: 13.5vw;
+      height: 8vh;
+      font-size: 2vw;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      cursor: pointer;
+      transition: all .5s;
+      box-shadow: 0.2vw 0.15vw red;
+  }
+
+  #Casino_Live_Project_Link:hover {
+    box-shadow: 0.4vw 0.3vw black; 
+    transition: all .5s;
+    transform: scale(0.95);
+}
+
+  #CasinoGithub_Project_Link {
+    position: absolute; 
+    bottom: 8vh;
+    left: 16vw;
+    width: 13.5vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer; 
+    box-shadow: 0.2vw 0.15vw green;
+    transition: all .5s;
+}
+
+ #Casino_Github_Project_Link:hover {
+     box-shadow: 0.4vw 0.3vw black; 
+     transition: all .5s;
+     transform: scale(0.95);
+}
+
+#Casino_ModalImage1 {
+  background-image: url(assets/pythonlogo.png);
+}
+
+#Casino_ModalImage2 {
+  background-image: url(assets/pythoncasinoexample.PNG); /*rplc*/
+}
+
+#Casino_Live_Project_Link {
+    position: absolute; 
+    bottom: 8vh;
+    left: 2vw;
+    width: 13.5vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: 0.2vw 0.15vw darkblue;
+}
+
+#Casino_Live_Project_Link:hover {
+  box-shadow: 0.4vw 0.3vw black; 
+  transition: all .5s;
+  transform: scale(0.95);
+}
+
+#Casino_Github_Project_Link {
+  position: absolute; 
+  bottom: 8vh;
+  left: 16vw;
+  width: 13.5vw;
+  height: 8vh;
+  font-size: 2vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer; 
+  box-shadow: 0.2vw 0.15vw green;
+  transition: all .5s;
+}
+
+#Casino_Github_Project_Link:hover {
+   box-shadow: 0.4vw 0.3vw black; 
+   transition: all .5s;
+   transform: scale(0.95);
+}
+  
+  /*Casino Modal End*/
+
+  /*Contact Modal Start*/
+
+ 
+  #Contact_Modal-content {
+    box-shadow: 1.25vw 1.25vh lightgreen;
+    background-image: url(assets/v3contactback.png);
+  }
+ 
+  .contact_form { 
+    position: absolute; 
+    display: flex; 
+    flex-direction: column; 
+    width: 50%;
+    height: 50vh;
+    color: white; 
+    margin-top: 20vh;
+    margin-left: 1vw;    
+    bottom: 6vh;
+
+    @include M{
+      height: 30vh;
+      flex-direction: row;
+    }
+
+}
+  input#name {
+      margin-bottom: 5vh;
+      width: 30vw;
+      height: 8vh;
+      font-size: 7vh;
+      box-shadow: inset 0.75vw 0.74vh 3vw darkgreen;
+
+      @include M{
+        width: 60vw;
+        height: 4vh;
+      }
+  }
+
+  input#email {
+      margin-bottom: 5vh; 
+      width: 30vw;
+      height: 8vh;
+      font-size: 2vw;
+      box-shadow: inset 0.75vw 0.74vh 3vw darkred; 
+
+      @include M{
+        width: 60vw;
+        height: 4vh;
+      }
+  }
+  
+  textarea { 
+      margin-bottom: 5vh;
+      width: 30vw;
+      height: 16vh;
+      font-size: 2.1vh;
+      box-shadow: 0.75vw 0.74vh darkblue; 
+      resize: none; 
+
+      @include M{
+        width: 60vw;
+        height: 4vh;
+      }
+  }
+
+  #Contact_Title {
+      width: 16vw;
+      height: 0;
+      color: white; 
+      font-size: 7vw;
+      text-shadow: 1.85vw 1.85vh 3vw red;
+  }
+
+  #contact_submit {
+      position: absolute; 
+      left: 30vw;
+      bottom: -11.3vh; 
+      width: 8vw;
+      height: 8vh;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1em;
+      transition: all 1s;
+      box-shadow: 0.75vw 0.74vh darkblue; 
+      background-color: black;
+      color: white;
+      cursor: pointer;
+
+      @include M{
+        width: 30vw;
+        height: 5vh;
+        bottom: -8vh;
+      }
+  }
+
+  #contact_submit:hover {
+    transform: scale(1.25);
+    left: 32vw;
+    transition: all 1s;
+    box-shadow: 1vw 0.95vh lightblue;
+  }
+
+  /*Contact Modal End*/
+
+  /*SCProject Modal Start*/
+
+  #SC_Modal-content {
+    box-shadow: 1.25vw 1.25vh orange;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: default;
+  }
+
+  #SCProject_Image1 {
+    background-image: url(assets/SCProject1.PNG);
+  }
+
+  #SCProject_Image2 {
+    background-image: url(assets/SCProject2.PNG);
+}
+
+  #SC_Live_Project_Link {
+    position: absolute; 
+    bottom: 8vh;
+    left: 2vw;
+    width: 13.5vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: 0.2vw 0.15vw red;
+}
+
+    #SC_Live_Project_Link:hover {
+    box-shadow: 0.4vw 0.3vw black; 
+    transition: all .5s;
+    transform: scale(0.95);
+    }
+
+    #SC_Github_Project_Link {
+    position: absolute; 
+    bottom: 8vh;
+    left: 16vw;
+    width: 13.5vw;
+    height: 8vh;
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer; 
+    box-shadow: 0.2vw 0.15vw green;
+    transition: all .5s;
+    }
+
+    #SC_Github_Project_Link:hover {
+    box-shadow: 0.4vw 0.3vw black; 
+    transition: all .5s;
+    transform: scale(0.95);
+    }
+
+    
+
+  /*SCProject Modal End*/

@@ -82,6 +82,11 @@ body {
 
   /*Navbar & Scrollbar End*/
 
+  #SectionE_Video {
+    width: 100vw;
+    height: 100vh;  
+  }
+  
   /*Animation Keyframes*/
 
   @keyframes typing {

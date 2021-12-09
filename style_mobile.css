@@ -111,6 +111,14 @@
         background-position: center;
     }
 
+    #SectionE {
+        background-color: black;
+    }
+
+    #SectionE_Video {
+        object-fit: contain;
+    }
+
     /*Start of Mobile Footer*/
 
     #FooterBridge {
