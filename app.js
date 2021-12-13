@@ -70,7 +70,7 @@ function snapScrollBtn_Runner() {
       //window.scrollBy(0, -window.innerHeight);
       window.scrollBy({
         top: -100,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
 
     }
@@ -78,13 +78,25 @@ function snapScrollBtn_Runner() {
       //window.scrollBy(0, window.innerHeight);
       window.scrollBy({
         top: 100,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
 }
 
+/*
+function mobile_nav() {
+  var navLink = document.getElementsByClassName("nav-link");
+
+  navLink[1].innerHTML = '<span class="link-text">Contact</span><img src="assets/SCProject.png"></img>'
+}
+
+
+var watchMedia = window.matchMedia("(max-width: 600px)")
+*/
+
 Modal_Runner()
 snapScrollBtn_Runner()
+
 
 /* MODAL_DIR notes
 0 - Contact
