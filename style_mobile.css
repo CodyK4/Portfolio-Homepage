@@ -125,7 +125,7 @@
         position: absolute; 
         right: 1vw;
         background-image: url(assets/FooterBridge.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         width: 19vw;
         height: 20vh;
@@ -134,8 +134,13 @@
     }
 
     #SectionFooter {
-        background-color: #ff9900;
-        border-top: 1vh;
+        background-color: #1e8bca;
+        border-top: 2.5vh;
+            border-left: 0vw; 
+            border-right: 0vw; 
+            border-bottom: 0vw;
+        border-style: double;
+        border-color: black;
         height: 30vh;
         width: 100vw;
         transition: all 1s;

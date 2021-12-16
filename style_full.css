@@ -202,13 +202,13 @@
         }
 
         #SectionFooter {
-            background-color: #00a2ff;
-            border-top: 1vh;
-            border-left: none; 
-            border-right: none; 
-            border-bottom: none;
+            background-color: #1e8bca;
+            border-top: 3.5vh;
+            border-left: 0vw; 
+            border-right: 0vw; 
+            border-bottom: 0vw;
             border-style: double;
-            border-color: white;
+            border-color: black;
             height: 40vh;
             width: 100vw;
             transition: all 1s;
