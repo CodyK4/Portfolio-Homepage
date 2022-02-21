@@ -44,7 +44,7 @@
     #SectionA {
         display: flex;
         flex-direction: column;
-        background-image: url(assets/homepagebackgroundv3.jpg);
+        background-image: url(assets/homepagebackgroundv3.webp);
         background-size: cover;
         transition: all .5s;
     }
@@ -62,19 +62,19 @@
     }
     
     #SectionB {
-        background-image: url(assets/gipfelncover1.png);
+        background-image: url(assets/gipfelncover1.webp);
         background-repeat: no-repeat; 
         background-size: cover;
     }
     
     #SectionC {
-        background-image: url(assets/pythonbackgroundv3.jpg);
+        background-image: url(assets/pythonbackgroundv3.webp);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #SectionD {
-        background-image: url(assets/SCProject.png);
+        background-image: url(assets/SCProject.webp);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -194,7 +194,7 @@
             position: absolute; 
             right: 1vw;
             margin-bottom: 32vh;
-            background-image: url(assets/FooterBridge.png);
+            background-image: url(assets/FooterBridge.webp);
             background-size: cover;
             background-repeat: no-repeat;
             width: 15vw;

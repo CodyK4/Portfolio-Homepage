@@ -33,6 +33,12 @@ body {
         border: 1vw;
         border-radius: 10vw;
         background: white;
+        transition: all 1s;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        height: 10vw;
+        transition: all 1s;
     }
 
     .navbar {
